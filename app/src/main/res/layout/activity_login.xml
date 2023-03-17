@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#2A2C40"
+android:padding="40dp"
+android:orientation="vertical"
+tools:context=".Common.LoginSignup.login">
+
+<RelativeLayout
+    android:id="@+id/signinOtpProgress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/progress"
+        android:padding="20dp"
+        android:elevation="8dp">
+
+    </ProgressBar>
+</RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Sign In"
+    android:fontFamily="@font/montserrat_light"
+    android:textColor="#BBC6DC"
+    android:textSize="40sp"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="50dp"
+    android:layout_marginBottom="40dp">
+</TextView>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/login_username"
+    android:hint="Enter Username"
+    android:backgroundTint="#35374C"
+    android:textColor="#919AAC"
+    android:textColorHint="#6D7481"
+    android:textSize="22sp"
+    android:background="@drawable/edittextborder"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="13dp"
+    android:inputType="text"
+    android:layout_marginVertical="15dp">
+</EditText>
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/login_password"
+    android:hint="Enter Password"
+    android:backgroundTint="#35374C"
+    android:textColor="#919AAC"
+    android:textColorHint="#6D7481"
+    android:textSize="22sp"
+    android:background="@drawable/edittextborder"
+    android:paddingHorizontal="25dp"
+    android:paddingVertical="13dp"
+    android:inputType="textPassword"
+    android:layout_marginVertical="15dp">
+</EditText>
+
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="50dp"
+    android:layout_marginVertical="25dp"
+    android:paddingVertical="15dp"
+    android:text="Sign In"
+    android:onClick="signIn"
+    android:textColor="#B5C0D5"
+    android:textSize="18sp"
+    android:background="@drawable/button">
+</Button>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/noAccount"
+    android:clickable="true"
+    android:onClick="noAccount"
+    android:text="Don't have an account?"
+    android:gravity="center_horizontal"
+    android:textSize="18dp"
+    android:textColor="#BBC6DC"
+    android:paddingHorizontal="10dp">
+</TextView>
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A2C40"
+    android:padding="40dp"
+    android:orientation="vertical"
+    tools:context=".Common.LoginSignup.signup">
+
+    <RelativeLayout
+        android:id="@+id/signupProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/progress"
+            android:padding="20dp"
+            android:elevation="8dp">
+
+        </ProgressBar>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="#BBC6DC"
+        android:textSize="40sp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="30dp">
+    </TextView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_username"
+        android:hint="Enter Username"
+        android:backgroundTint="#35374C"
+        android:textColor="#919AAC"
+        android:textColorHint="#6D7481"
+        android:textSize="22sp"
+        android:background="@drawable/edittextborder"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="13dp"
+        android:inputType="text"
+        android:layout_marginVertical="10dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:hint="Enter Name"
+        android:backgroundTint="#35374C"
+        android:textColor="#919AAC"
+        android:textColorHint="#6D7481"
+        android:textSize="22sp"
+        android:background="@drawable/edittextborder"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="13dp"
+        android:inputType="text"
+        android:layout_marginVertical="10dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phone"
+        android:hint="Enter Phone #"
+        android:maxLength="11"
+        android:backgroundTint="#35374C"
+        android:textColor="#919AAC"
+        android:textColorHint="#6D7481"
+        android:textSize="22sp"
+        android:background="@drawable/edittextborder"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="13dp"
+        android:inputType="phone"
+        android:layout_marginVertical="10dp">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/signup_password"
+        android:hint="Enter Password"
+        android:backgroundTint="#35374C"
+        android:textColor="#919AAC"
+        android:textColorHint="#6D7481"
+        android:textSize="22sp"
+        android:background="@drawable/edittextborder"
+        android:paddingHorizontal="25dp"
+        android:paddingVertical="13dp"
+        android:inputType="textPassword"
+        android:layout_marginVertical="10dp">
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="25dp"
+        android:paddingVertical="15dp"
+        android:text="Sign Up"
+        android:onClick="signUp"
+        android:textColor="#B5C0D5"
+        android:textSize="18sp"
+        android:background="@drawable/button">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noAccount"
+        android:clickable="true"
+        android:onClick="alreadyAccount"
+        android:text="Already have account?"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textColor="#BBC6DC"
+        android:paddingHorizontal="10dp"
+        android:focusable="true">
+    </TextView>
+</LinearLayout>

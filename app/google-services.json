@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009696953994",
+    "firebase_url": "https://bank-mobile-ed289-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "bank-mobile-ed289",
+    "storage_bucket": "bank-mobile-ed289.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009696953994:android:0f7888f4ca4eb027a5ff73",
+        "android_client_info": {
+          "package_name": "sh.surge.hammad.bankmobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009696953994-6hfa8d7tvg7rj7pdg7dftmsmd82rl86b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "sh.surge.hammad.bankmobile",
+            "certificate_hash": "59827853afc80379623d7067415b0d35373f7268"
+          }
+        },
+        {
+          "client_id": "1009696953994-eij9oba0aauv82iusdc95ham35sh1ioj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeEbSwAWiWAFP29YRIn4_7TgCjw3X46X0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009696953994-eij9oba0aauv82iusdc95ham35sh1ioj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

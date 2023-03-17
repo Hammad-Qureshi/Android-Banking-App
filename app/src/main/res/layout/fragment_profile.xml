@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".User.ProfileFragment"
+android:background="#393B51">
+
+<!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="40dp"
+            android:paddingHorizontal="50dp"
+            android:gravity="center_horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="wrap_content"
+                android:layout_height="110dp"
+                android:src="@drawable/user_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:elevation="20dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/profileUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:textColor="@color/lightWhite"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="32dp"
+                android:layout_marginBottom="30dp">
+
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profileName"
+                android:hint="Enter Name"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#919AAC"
+                android:textColorHint="#6D7481"
+                android:textSize="22sp"
+                android:background="@drawable/edittextborder"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="13dp"
+                android:inputType="text"
+                android:layout_marginVertical="15dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profilePhone"
+                android:hint="Enter Phone#"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#919AAC"
+                android:textColorHint="#6D7481"
+                android:textSize="22sp"
+                android:background="@drawable/edittextborder"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="13dp"
+                android:inputType="number"
+                android:maxLength="11"
+                android:layout_marginVertical="15dp">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/profilePassword"
+                android:hint="Enter Password"
+                android:backgroundTint="@color/colorPrimary"
+                android:textColor="#919AAC"
+                android:textColorHint="#6D7481"
+                android:textSize="22sp"
+                android:background="@drawable/edittextborder"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="13dp"
+                android:inputType="textPassword"
+                android:layout_marginVertical="15dp">
+            </EditText>
+
+            <Button
+                android:id="@+id/profileUpdateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:background="@drawable/btn_update"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="20dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingVertical="15dp"
+                android:textColor="@color/colorPrimary"
+                android:alpha=".9">
+
+            </Button>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginVertical="15dp"/>
+
+            <Button
+                android:id="@+id/profileLogoutBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="60dp"
+                android:text="Logout"
+                android:background="@drawable/btn_logout"
+                android:layout_marginHorizontal="60dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingVertical="15dp"
+                android:textColor="#B5C0D5">
+
+            </Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

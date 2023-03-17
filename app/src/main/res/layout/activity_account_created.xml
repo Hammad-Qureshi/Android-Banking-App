@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="40dp"
+    tools:context=".Common.LoginSignup.accountCreated"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/acc_created"
+        android:layout_marginBottom="10dp">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Account Created \nSuccessfully!"
+        android:textSize="30dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:gravity="center"
+        android:layout_marginVertical="10dp"
+        android:textColor="@color/colorPrimary"
+        >
+    </TextView>
+
+    <Button
+        android:onClick="loginNow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login Now"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="20dp"
+        android:layout_marginTop="50dp"
+        android:paddingVertical="15dp"
+        android:background="@drawable/button_light"
+        android:textAllCaps="false"
+        android:elevation="3dp"
+        android:layout_marginHorizontal="40dp">
+
+    </Button>
+
+</LinearLayout>

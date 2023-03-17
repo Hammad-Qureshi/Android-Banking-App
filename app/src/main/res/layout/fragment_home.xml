@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".User.HomeFragment"
+    android:background="#393B51">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sendMoneyPopup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#2A2C40"
+            android:visibility="gone"
+            android:padding="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Details:"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#BBC6DC"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/usernameSendTxt"
+                android:hint="Enter username"
+                android:backgroundTint="#35374C"
+                android:textColor="#919AAC"
+                android:textColorHint="#6D7481"
+                android:textSize="22sp"
+                android:background="@drawable/edittextborder"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="15dp"
+                android:inputType="text"
+                android:layout_marginVertical="15dp"
+                android:gravity="center">
+            </EditText>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountToSendTxt"
+                android:hint="Enter Amount"
+                android:backgroundTint="#35374C"
+                android:textColor="#919AAC"
+                android:textColorHint="#6D7481"
+                android:textSize="22sp"
+                android:background="@drawable/edittextborder"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="15dp"
+                android:inputType="number"
+                android:layout_marginVertical="15dp"
+                android:gravity="center"
+                android:maxLength="8">
+            </EditText>
+
+            <Button
+                android:id="@+id/sendMoneyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="20dp"
+                android:paddingVertical="15dp"
+                android:text="Send Money"
+                android:textColor="#B5C0D5"
+                android:textSize="18sp"
+                android:background="@drawable/button">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/addMoneyPopup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#2A2C40"
+            android:visibility="gone"
+            android:padding="50dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter amount to add:"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="#BBC6DC"
+                android:textSize="25sp"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="20dp">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountToAddTxt"
+                android:hint="Rs. /-"
+                android:backgroundTint="#35374C"
+                android:textColor="#919AAC"
+                android:textColorHint="#6D7481"
+                android:textSize="22sp"
+                android:background="@drawable/edittextborder"
+                android:paddingHorizontal="25dp"
+                android:paddingVertical="15dp"
+                android:inputType="number"
+                android:layout_marginVertical="15dp"
+                android:gravity="center"
+                android:maxLength="7">
+            </EditText>
+
+            <Button
+                android:id="@+id/addMoneyBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="60dp"
+                android:layout_marginVertical="20dp"
+                android:paddingVertical="15dp"
+                android:text="Add Money"
+                android:textColor="#B5C0D5"
+                android:textSize="18sp"
+                android:background="@drawable/button">
+            </Button>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello, Hammad"
+            android:textColor="@color/lightWhite"
+            android:textSize="20sp"
+            android:fontFamily="@font/montserrat_regular"
+            android:layout_marginVertical="25dp"
+            android:layout_marginStart="30dp">
+
+        </TextView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="30dp"
+            app:cardBackgroundColor="#8291ae"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="25dp">
+
+                <TextView
+                    android:id="@+id/bankName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ForriPay"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:textColor="#CE353750"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Debit Card"
+                    android:layout_alignParentEnd="true">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/chip"
+                    android:layout_width="45dp"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/bankName"
+                    android:layout_marginTop="25dp"
+                    android:src="@drawable/chip2">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/cardNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234-2344-2344-5654"
+                    android:layout_below="@+id/chip"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/sourcecodepro_medium"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#47496A">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/cardName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hammad Qureshi"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginBottom="5dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/visa"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="50dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Balance"
+                android:fontFamily="@font/montserrat_regular"
+                android:textSize="20sp"
+                android:textColor="@color/lightWhite">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rs.28,000/-"
+                android:textSize="30sp"
+                android:fontFamily="@font/montserrat_extralight"
+                android:textColor="@color/lightWhite"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="35dp">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/addMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Money"
+                android:background="@drawable/button_dash"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="20dp"
+                android:textSize="18sp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingVertical="20dp"
+                android:textColor="@color/colorPrimary"
+                android:alpha=".9">
+
+            </Button>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="OR"
+                android:textSize="25dp"
+                android:fontFamily="@font/montserrat_extralight"
+                android:textColor="@color/lightWhite">
+
+            </TextView>
+
+            <Button
+                android:id="@+id/sendMoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Send Money"
+                android:background="@drawable/button_dash"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="50dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:paddingVertical="20dp"
+                android:textColor="@color/colorPrimary"
+                android:alpha=".9">
+
+            </Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
